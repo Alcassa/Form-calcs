@@ -1,0 +1,14 @@
+C:\Users\galca\Estudos\ETEC\DS\SolucaoCalcs\SolucaoCalcs\bin\Debug\SolucaoCalcs.exe.config
+C:\Users\galca\Estudos\ETEC\DS\SolucaoCalcs\SolucaoCalcs\bin\Debug\SolucaoCalcs.exe
+C:\Users\galca\Estudos\ETEC\DS\SolucaoCalcs\SolucaoCalcs\bin\Debug\SolucaoCalcs.pdb
+C:\Users\galca\Estudos\ETEC\DS\SolucaoCalcs\SolucaoCalcs\obj\Debug\SolucaoCalcs.csproj.AssemblyReference.cache
+C:\Users\galca\Estudos\ETEC\DS\SolucaoCalcs\SolucaoCalcs\obj\Debug\SolucaoCalcs.csproj.SuggestedBindingRedirects.cache
+C:\Users\galca\Estudos\ETEC\DS\SolucaoCalcs\SolucaoCalcs\obj\Debug\SolucaoCalcs.Form1.resources
+C:\Users\galca\Estudos\ETEC\DS\SolucaoCalcs\SolucaoCalcs\obj\Debug\SolucaoCalcs.MenuPrincipal.FormMDI.resources
+C:\Users\galca\Estudos\ETEC\DS\SolucaoCalcs\SolucaoCalcs\obj\Debug\SolucaoCalcs.Properties.Resources.resources
+C:\Users\galca\Estudos\ETEC\DS\SolucaoCalcs\SolucaoCalcs\obj\Debug\SolucaoCalcs.csproj.GenerateResource.cache
+C:\Users\galca\Estudos\ETEC\DS\SolucaoCalcs\SolucaoCalcs\obj\Debug\SolucaoCalcs.csproj.CoreCompileInputs.cache
+C:\Users\galca\Estudos\ETEC\DS\SolucaoCalcs\SolucaoCalcs\obj\Debug\SolucaoCalcs.exe
+C:\Users\galca\Estudos\ETEC\DS\SolucaoCalcs\SolucaoCalcs\obj\Debug\SolucaoCalcs.pdb
+C:\Users\galca\Estudos\ETEC\DS\SolucaoCalcs\SolucaoCalcs\obj\Debug\SolucaoCalcs.Calculadoras.FormCalculadora.resources
+C:\Users\galca\Estudos\ETEC\DS\SolucaoCalcs\SolucaoCalcs\obj\Debug\SolucaoCalcs.Calculadoras.FormSuperCalc.resources
