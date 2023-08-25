@@ -16,6 +16,10 @@ namespace SolucaoCalcs.Calculadoras
         {
             InitializeComponent();
         }
+        string vOperacao;
+        double vNumant;
+        bool vLimpar = false;
+        double vNumdps;
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -23,7 +27,66 @@ namespace SolucaoCalcs.Calculadoras
         }
         public void f_Numero(object sender, EventArgs e)
         {
-            lblPrincipal.Text=(sender as Button).Text;
+            if (lblPrincipal.Text == "0")
+            {
+                lblPrincipal.Text = "";
+            }
+            lblPrincipal.Text += (sender as Button).Text;
+        }
+        private void operacao(object sender, EventArgs e)
+        {
+            vOperacao = ((Button)sender).Text;
+            vNumant = double.Parse(lblPrincipal.Text);
+            vLimpar = true;
+            limpar();
+        }
+        private void btnLimpar(object sender, EventArgs e)
+        {
+
+            vNumant = 0;
+            vLimpar=true;
+            limpar(); 
+        }
+        private void btnIgual(object sender, EventArgs e)
+        {
+             vNumdps = double.Parse(lblPrincipal.Text);
+            string x = "*";
+            switch (vOperacao)
+            {
+                case "+":
+                    {
+                        lblPrincipal.Text = (vNumant + vNumdps).ToString();
+                        break;
+                    }
+                    case "-":
+                    {
+                        lblPrincipal.Text=(vNumant - vNumdps).ToString();
+                        break;
+                    }
+                    case "*":
+                    {
+                        lblPrincipal.Text=(vNumant * vNumdps).ToString();
+                        break;
+                    }
+                case "/":
+                    {
+                        lblPrincipal.Text=(vNumant / vNumdps).ToString();
+                        break;
+                    }
+            }
+
+        }
+        public void limpar()
+        {
+            if (vLimpar = true)
+            {
+                lblPrincipal.Text = "";
+            }
+        }
+
+        private void FormSuperCalc_KeyDown(object sender, KeyEventArgs e)
+        {
+
         }
     }
 }
