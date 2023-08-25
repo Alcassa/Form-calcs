@@ -42,15 +42,14 @@ namespace SolucaoCalcs.Calculadoras
         }
         private void btnLimpar(object sender, EventArgs e)
         {
-
+            vNumdps=0;
             vNumant = 0;
             vLimpar=true;
             limpar(); 
         }
         private void btnIgual(object sender, EventArgs e)
         {
-             vNumdps = double.Parse(lblPrincipal.Text);
-            string x = "*";
+            vNumdps = double.Parse(lblPrincipal.Text);
             switch (vOperacao)
             {
                 case "+":
