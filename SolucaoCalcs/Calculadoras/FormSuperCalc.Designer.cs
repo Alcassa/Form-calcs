@@ -48,6 +48,7 @@
             this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
+            this.lblD = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -79,6 +80,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lblD);
             this.panel1.Controls.Add(this.button10);
             this.panel1.Controls.Add(this.button11);
             this.panel1.Controls.Add(this.button12);
@@ -95,6 +97,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(188, 271);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button10
             // 
@@ -299,6 +302,15 @@
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.btnIgual);
             // 
+            // lblD
+            // 
+            this.lblD.AutoSize = true;
+            this.lblD.Location = new System.Drawing.Point(21, 19);
+            this.lblD.Name = "lblD";
+            this.lblD.Size = new System.Drawing.Size(10, 13);
+            this.lblD.TabIndex = 12;
+            this.lblD.Text = ",";
+            // 
             // FormSuperCalc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -307,10 +319,12 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblPrincipal);
+            this.KeyPreview = true;
             this.Name = "FormSuperCalc";
             this.Text = "FormSuperCalc";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormSuperCalc_KeyDown);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -338,5 +352,6 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Label lblD;
     }
 }

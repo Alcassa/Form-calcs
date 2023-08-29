@@ -19,7 +19,6 @@ namespace SolucaoCalcs.Calculadoras
         string vOperacao;
         double vNumant;
         bool vLimpar = false;
-        double vNumdps;
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -27,6 +26,12 @@ namespace SolucaoCalcs.Calculadoras
         }
         public void f_Numero(object sender, EventArgs e)
         {
+            string numero = ((Button)sender).ToString();
+            if (vLimpar)
+            {
+                lblPrincipal.Text = "";
+                vLimpar = false;
+            }
             if (lblPrincipal.Text == "0")
             {
                 lblPrincipal.Text = "";
@@ -38,18 +43,12 @@ namespace SolucaoCalcs.Calculadoras
             vOperacao = ((Button)sender).Text;
             vNumant = double.Parse(lblPrincipal.Text);
             vLimpar = true;
-            limpar();
+            lblPrincipal.Focus();
         }
-        private void btnLimpar(object sender, EventArgs e)
-        {
-            vNumdps=0;
-            vNumant = 0;
-            vLimpar=true;
-            limpar(); 
-        }
+
         private void btnIgual(object sender, EventArgs e)
         {
-            vNumdps = double.Parse(lblPrincipal.Text);
+            double vNumdps = double.Parse(lblPrincipal.Text);
             switch (vOperacao)
             {
                 case "+":
@@ -57,33 +56,81 @@ namespace SolucaoCalcs.Calculadoras
                         lblPrincipal.Text = (vNumant + vNumdps).ToString();
                         break;
                     }
-                    case "-":
+                case "-":
                     {
-                        lblPrincipal.Text=(vNumant - vNumdps).ToString();
+                        lblPrincipal.Text = (vNumant - vNumdps).ToString();
                         break;
                     }
-                    case "*":
+                case "*":
                     {
-                        lblPrincipal.Text=(vNumant * vNumdps).ToString();
+                        lblPrincipal.Text = (vNumant * vNumdps).ToString();
                         break;
                     }
                 case "/":
                     {
-                        lblPrincipal.Text=(vNumant / vNumdps).ToString();
+                        lblPrincipal.Text = (vNumant / vNumdps).ToString();
                         break;
                     }
             }
 
         }
-        public void limpar()
-        {
-            if (vLimpar = true)
-            {
-                lblPrincipal.Text = "";
-            }
-        }
+
 
         private void FormSuperCalc_KeyDown(object sender, KeyEventArgs e)
+        {
+            Button but = new Button();
+            if (e.Control == true) { }
+            if (e.Alt == true) { }
+            if (e.Shift == true) { }
+            lblD.Text = e.KeyCode.ToString();
+            if ((e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9))
+            {
+                but.Text = e.KeyCode.ToString().Substring(1, 1);
+                f_Numero(but, e);
+                return;
+            }
+            else if (e.KeyCode == Keys.Oemcomma)
+            {
+                but.Text = " , ";
+                f_Numero(but, e);
+                return;
+
+            }
+            switch (e.KeyCode.ToString())
+            {
+                case "Oemplus":
+                    {
+                        but.Text = "+";
+                        operacao(but, e);
+                        return;
+                    }
+                case "Subtract":
+                    {
+                        but.Text = "-";
+                        operacao(but, e);
+                        return;
+                    }
+                case "Multiply":
+                    {
+                        but.Text = "*";
+                        operacao(but, e);
+                        return;
+                    }
+                case "'Divide":
+                    {
+                        but.Text = "/";
+                        operacao(but, e);
+                        return;
+                    }
+            }
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnIgual(but, e);
+            }
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
