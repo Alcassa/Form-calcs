@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SolucaoCalcs.MenuPrincipal;
+using SolucaoCalcs.login;
 
 namespace SolucaoCalcs
 {
@@ -17,7 +18,7 @@ namespace SolucaoCalcs
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMDI());
+            Application.Run(new FormLogin_());
         }
     }
 }

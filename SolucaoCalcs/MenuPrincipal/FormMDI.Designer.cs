@@ -31,9 +31,9 @@
             this.menuStripCalculadora = new System.Windows.Forms.ToolStripMenuItem();
             this.fecharToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculadoraEscolhaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calculadoraMCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fechar2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.calculadoraMCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +65,13 @@
             this.calculadoraEscolhaToolStripMenuItem.Text = "Calculadora Escolha";
             this.calculadoraEscolhaToolStripMenuItem.Click += new System.EventHandler(this.calculadoraEscolhaToolStripMenuItem_Click);
             // 
+            // calculadoraMCToolStripMenuItem
+            // 
+            this.calculadoraMCToolStripMenuItem.Name = "calculadoraMCToolStripMenuItem";
+            this.calculadoraMCToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.calculadoraMCToolStripMenuItem.Text = "Calculadora MC";
+            this.calculadoraMCToolStripMenuItem.Click += new System.EventHandler(this.calculadoraMCToolStripMenuItem_Click);
+            // 
             // fechar2ToolStripMenuItem
             // 
             this.fechar2ToolStripMenuItem.Name = "fechar2ToolStripMenuItem";
@@ -75,27 +82,21 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuStripCalculadora});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(572, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
-            // 
-            // calculadoraMCToolStripMenuItem
-            // 
-            this.calculadoraMCToolStripMenuItem.Name = "calculadoraMCToolStripMenuItem";
-            this.calculadoraMCToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
-            this.calculadoraMCToolStripMenuItem.Text = "Calculadora MC";
-            this.calculadoraMCToolStripMenuItem.Click += new System.EventHandler(this.calculadoraMCToolStripMenuItem_Click);
             // 
             // FormMDI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(572, 304);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
