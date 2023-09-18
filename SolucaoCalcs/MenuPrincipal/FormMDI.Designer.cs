@@ -34,6 +34,7 @@
             this.calculadoraMCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fechar2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,6 +44,7 @@
             this.fecharToolStripMenuItem,
             this.calculadoraEscolhaToolStripMenuItem,
             this.calculadoraMCToolStripMenuItem,
+            this.toolStripMenuItem1,
             this.fechar2ToolStripMenuItem});
             this.menuStripCalculadora.Name = "menuStripCalculadora";
             this.menuStripCalculadora.Size = new System.Drawing.Size(50, 20);
@@ -68,6 +70,7 @@
             // calculadoraMCToolStripMenuItem
             // 
             this.calculadoraMCToolStripMenuItem.Name = "calculadoraMCToolStripMenuItem";
+            this.calculadoraMCToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D3)));
             this.calculadoraMCToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.calculadoraMCToolStripMenuItem.Text = "Calculadora MC";
             this.calculadoraMCToolStripMenuItem.Click += new System.EventHandler(this.calculadoraMCToolStripMenuItem_Click);
@@ -91,6 +94,13 @@
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(220, 22);
+            this.toolStripMenuItem1.Text = "Orientada";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.ToolStripMenuItem1_Click);
             // 
             // FormMDI
             // 
@@ -119,5 +129,6 @@
         private System.Windows.Forms.ToolStripMenuItem calculadoraEscolhaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fechar2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calculadoraMCToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }

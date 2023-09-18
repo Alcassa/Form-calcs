@@ -58,6 +58,14 @@
     <Compile Include="Calculadoras\FormSuperCalc.Designer.cs">
       <DependentUpon>FormSuperCalc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Classe\CalculadoraBasica.cs" />
+    <Compile Include="Classe\CalculadoraCientifica.cs" />
+    <Compile Include="Classe\FormOrienta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classe\FormOrienta.Designer.cs">
+      <DependentUpon>FormOrienta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +91,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Calculadoras\FormSuperCalc.resx">
       <DependentUpon>FormSuperCalc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classe\FormOrienta.resx">
+      <DependentUpon>FormOrienta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

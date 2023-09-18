@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SolucaoCalcs.Classe;
 using SolucaoCalcs;
 using SolucaoCalcs.Calculadoras;
 
@@ -57,6 +58,14 @@ namespace SolucaoCalcs.MenuPrincipal
             FormSuperCalc calc=new FormSuperCalc();
             calc.MdiParent = this;
             calc.Show();
+        }
+
+        private void ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var calc = new FormOrienta();
+            calc.MdiParent = this;
+            calc.Show();
+
         }
     }
 }
