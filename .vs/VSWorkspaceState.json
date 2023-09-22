@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SolucaoCalcs",
-    "\\SolucaoCalcs\\login"
+    "\\SolucaoCalcs"
   ],
-  "SelectedNode": "\\SolucaoCalcs\\login\\FormLogin.cs",
+  "SelectedNode": "\\SolucaoCalcs\\Classe",
   "PreviewInSolutionExplorer": false
 }
