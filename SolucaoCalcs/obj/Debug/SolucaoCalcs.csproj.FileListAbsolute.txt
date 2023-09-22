@@ -73,3 +73,4 @@ C:\Users\galca\OneDrive\Área de Trabalho\Alcassa\Form-calcs\SolucaoCalcs\obj\De
 C:\Users\galca\OneDrive\Área de Trabalho\Alcassa\Form-calcs\SolucaoCalcs\obj\Debug\SolucaoCalcs.csproj.CoreCompileInputs.cache
 C:\Users\galca\OneDrive\Área de Trabalho\Alcassa\Form-calcs\SolucaoCalcs\obj\Debug\SolucaoCalcs.exe
 C:\Users\galca\OneDrive\Área de Trabalho\Alcassa\Form-calcs\SolucaoCalcs\obj\Debug\SolucaoCalcs.pdb
+C:\Users\galca\Estudos\ETEC\DS\Form-calcs\SolucaoCalcs\obj\Debug\SolucaoCalcs.Classe.FormOrienta.resources

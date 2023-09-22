@@ -51,6 +51,13 @@
             // cmbFunc
             // 
             this.cmbFunc.FormattingEnabled = true;
+            this.cmbFunc.Items.AddRange(new object[] {
+            "Somar ",
+            "Subtrair\t",
+            "Dividir1",
+            "Multiplicar",
+            "Compara",
+            "ImparPar"});
             this.cmbFunc.Location = new System.Drawing.Point(188, 32);
             this.cmbFunc.Name = "cmbFunc";
             this.cmbFunc.Size = new System.Drawing.Size(121, 21);
