@@ -29,6 +29,10 @@ namespace SolucaoCalcs.login
                     this.Visible = false;
 
                 }
+                else
+                {
+                    MessageBox.Show("Usuario ou senha incorretos");
+                }
             }
             catch (Exception ex) { }
         }

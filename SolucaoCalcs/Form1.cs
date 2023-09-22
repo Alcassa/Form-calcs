@@ -162,6 +162,7 @@ namespace SolucaoCalcs
         {
             txtNumber1.Text = "";
             txtNumber2.Text = "";
+            
         }
         private void btnFechar_Click(object sender, EventArgs e)
         {
