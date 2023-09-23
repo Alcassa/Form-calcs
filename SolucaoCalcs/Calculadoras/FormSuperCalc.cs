@@ -82,7 +82,6 @@ namespace SolucaoCalcs.Calculadoras
             if (e.Control == true) { }
             if (e.Alt == true) { }
             if (e.Shift == true) { }
-            lblD.Text = e.KeyCode.ToString();
             if ((e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9))
             {
                 but.Text = e.KeyCode.ToString().Substring(1, 1);
@@ -133,6 +132,11 @@ namespace SolucaoCalcs.Calculadoras
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

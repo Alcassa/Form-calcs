@@ -47,6 +47,7 @@
             // 
             this.txtPassword.Location = new System.Drawing.Point(235, 126);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(100, 20);
             this.txtPassword.TabIndex = 2;
             // 
@@ -84,7 +85,7 @@
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.TabIndex = 6;
-            this.btnLogin.Text = "Login";
+            this.btnLogin.Text = "&Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
@@ -101,6 +102,7 @@
             this.Controls.Add(this.txtUser);
             this.IsMdiContainer = true;
             this.Name = "FormLogin_";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLogin_";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -34,7 +34,9 @@ namespace SolucaoCalcs.login
                     MessageBox.Show("Usuario ou senha incorretos");
                 }
             }
-            catch (Exception ex) { }
+            catch (Exception ex) {
+                MessageBox.Show("Ocorreu um erro");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

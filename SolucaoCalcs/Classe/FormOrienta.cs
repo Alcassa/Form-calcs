@@ -22,6 +22,11 @@ namespace SolucaoCalcs.Classe
         {
 
             decimal a, b;
+            if(txtNumero1.Text == null) { a = 0; }
+            else
+            {
+                a=decimal.Parse(txtNumero1.Text);
+            }
             a = decimal.Parse(txtNumero1.Text);
             if (txtNumero2.Text == "") { b = 0; }
             else
@@ -94,5 +99,6 @@ namespace SolucaoCalcs.Classe
                     break;
             }
         }
+
     }
 }

@@ -48,7 +48,7 @@
             this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
-            this.lblD = new System.Windows.Forms.Label();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -80,7 +80,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.lblD);
+            this.panel1.Controls.Add(this.btnLimpar);
             this.panel1.Controls.Add(this.button10);
             this.panel1.Controls.Add(this.button11);
             this.panel1.Controls.Add(this.button12);
@@ -302,14 +302,17 @@
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.btnIgual);
             // 
-            // lblD
+            // btnLimpar
             // 
-            this.lblD.AutoSize = true;
-            this.lblD.Location = new System.Drawing.Point(21, 19);
-            this.lblD.Name = "lblD";
-            this.lblD.Size = new System.Drawing.Size(10, 13);
-            this.lblD.TabIndex = 12;
-            this.lblD.Text = ",";
+            this.btnLimpar.BackColor = System.Drawing.Color.DeepPink;
+            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.Location = new System.Drawing.Point(107, 11);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(78, 45);
+            this.btnLimpar.TabIndex = 12;
+            this.btnLimpar.Text = "<-";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // FormSuperCalc
             // 
@@ -324,7 +327,6 @@
             this.Text = "FormSuperCalc";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormSuperCalc_KeyDown);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -352,6 +354,6 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Label lblD;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }

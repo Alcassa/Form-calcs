@@ -62,5 +62,10 @@ namespace SolucaoCalcs.Calculadoras
             txtN2.Text = "";
             lblSinal.Text = "";
         }
+
+        private void txtResult_TextChanged(object sender, EventArgs e)
+        {
+            this.Text = "?";
+        }
     }
 }
